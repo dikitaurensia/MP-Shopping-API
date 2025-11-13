@@ -24,7 +24,7 @@ try {
 	if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 		$queryParam = [];
 		$queryParam['page'] = isset($_GET['page']) && !empty($_GET['page']) ? $_GET['page'] : 1;
-		$queryParam['limit'] = isset($_GET['limit']) && !empty($_GET['limit']) ? $_GET['limit'] : 10;
+		$queryParam['limit'] = isset($_GET['limit']) && !empty($_GET['limit']) ? $_GET['limit'] : 20;
 		$queryParam['search'] = isset($_GET['search']) && !empty($_GET['search']) ? $_GET['search'] : '';
 
 		$database = new Database();
